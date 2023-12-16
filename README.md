@@ -1,12 +1,7 @@
-# ShinhanHack_SawSim
-맞춤형 여행 예산 관리 서비스_SolTrip
-(2023.09.01 - 2023.09.17)
-
-
 # ✈ SolTrip
 
 <div>
-  <h3>여행 예산 관리 플랫폼</h3>
+  <h3>맞춤형 여행 예산 관리 플랫폼</h3>
 </div>
 
 <br/>
@@ -62,11 +57,11 @@
 ![React](https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![React-Query](https://img.shields.io/badge/reactquery-FF4154?style=for-the-badge&logo=reactquery&logoColor=white)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![PWA](https://img.shields.io/badge/pwa-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white)
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) 
 ![JavaScript](https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
-
 
 <br/>
 
@@ -102,6 +97,137 @@
 
 <a name="item-four"></a>
 
+<details>
+<summary>FrontEnd</summary>
+  
+```
+📦src
+ ┣ 📂Api
+ ┃ ┣ 📜Api.js
+ ┃ ┗ 📜pencil.png
+ ┣ 📂assets
+ ┃ ┣ 📜books.png
+ ┃ ┣ 📜books3.png
+ ┃ ┣ 📜cash.png
+ ┃ ┣ 📜coffee.png
+ ┃ ┣ 📜donut.png
+ ┃ ┣ 📜gym.png
+ ┃ ┣ 📜location.png
+ ┃ ┣ 📜login.png
+ ┃ ┣ 📜paperplane.png
+ ┃ ┣ 📜pencil.png
+ ┃ ┣ 📜pencil2.png
+ ┃ ┣ 📜sad.png
+ ┃ ┣ 📜sea.gif
+ ┃ ┣ 📜spot.png
+ ┃ ┗ 📜verify.png
+ ┣ 📂components
+ ┃ ┣ 📂budget
+ ┃ ┃ ┣ 📜Popular.js
+ ┃ ┃ ┣ 📜Popular.module.css
+ ┃ ┃ ┣ 📜Report.js
+ ┃ ┃ ┗ 📜Report.module.css
+ ┃ ┣ 📂cash
+ ┃ ┃ ┣ 📜CashorOCR.js
+ ┃ ┃ ┣ 📜CashorOCR.module.css
+ ┃ ┃ ┣ 📜CreateInPerson.js
+ ┃ ┃ ┗ 📜CreateInPerson.module.css
+ ┃ ┣ 📂common
+ ┃ ┃ ┣ 📜Header.js
+ ┃ ┃ ┗ 📜Header.module.css
+ ┃ ┣ 📂login
+ ┃ ┃ ┣ 📜TransferOne.js
+ ┃ ┃ ┗ 📜TransferOne.module.css
+ ┃ ┣ 📂main
+ ┃ ┃ ┣ 📜BalanceSchedule.js
+ ┃ ┃ ┣ 📜BalanceSchedule.module.css
+ ┃ ┃ ┣ 📜Insurance.js
+ ┃ ┃ ┣ 📜Insurance.module.css
+ ┃ ┃ ┣ 📜PortBanner.js
+ ┃ ┃ ┣ 📜PortBanner.module.css
+ ┃ ┃ ┣ 📜shinhan.png
+ ┃ ┃ ┗ 📜trip1.png
+ ┃ ┣ 📂plan
+ ┃ ┃ ┣ 📜backup.js
+ ┃ ┃ ┣ 📜Back_Calendar.js
+ ┃ ┃ ┣ 📜Back_SelectedDate.js
+ ┃ ┃ ┣ 📜bbackup.js
+ ┃ ┃ ┣ 📜Calendar.css
+ ┃ ┃ ┣ 📜Calendar.js
+ ┃ ┃ ┣ 📜DateList.js
+ ┃ ┃ ┣ 📜DateList.module.css
+ ┃ ┃ ┣ 📜SelectedDate.js
+ ┃ ┃ ┣ 📜SelectedDate.module.css
+ ┃ ┃ ┗ 📜TestCalendar.js
+ ┃ ┣ 📂planBudget
+ ┃ ┃ ┣ 📜CreateBudget.js
+ ┃ ┃ ┣ 📜CreateBudget.module.css
+ ┃ ┃ ┣ 📜EditBudget.js
+ ┃ ┃ ┗ 📜UpdateBudget.module.css
+ ┃ ┣ 📂popular
+ ┃ ┃ ┣ 📜BackUpPopular.js
+ ┃ ┃ ┣ 📜PopularSpots.js
+ ┃ ┃ ┗ 📜PopularSpots.module.css
+ ┃ ┗ 📂portfolio
+ ┃ ┃ ┣ 📜Analysis.js
+ ┃ ┃ ┣ 📜Analysis.module.css
+ ┃ ┃ ┣ 📜Map.css
+ ┃ ┃ ┣ 📜Map.js
+ ┃ ┃ ┣ 📜Map.module.css
+ ┃ ┃ ┣ 📜PortList.js
+ ┃ ┃ ┗ 📜PortList.module.css
+ ┣ 📂lib
+ ┃ ┣ 📜PageBlock.js
+ ┃ ┣ 📜PrivateRoute.js
+ ┃ ┗ 📜PublicRoute.js
+ ┣ 📂pages
+ ┃ ┣ 📜Budget.js
+ ┃ ┣ 📜Budget.module.css
+ ┃ ┣ 📜Cash.js
+ ┃ ┣ 📜Cash.module.css
+ ┃ ┣ 📜CashCreate.js
+ ┃ ┣ 📜CashCreate.module.css
+ ┃ ┣ 📜Dutch.js
+ ┃ ┣ 📜Dutch.module.css
+ ┃ ┣ 📜Login.js
+ ┃ ┣ 📜Login.module.css
+ ┃ ┣ 📜login.png
+ ┃ ┣ 📜MainPage.js
+ ┃ ┣ 📜MainPage.module.css
+ ┃ ┣ 📜Plan.js
+ ┃ ┣ 📜Plan.module.css
+ ┃ ┣ 📜PlanBudget.js
+ ┃ ┣ 📜PlanBudget.module.css
+ ┃ ┣ 📜PlanBudgetDetail.js
+ ┃ ┣ 📜PlanDetail.js
+ ┃ ┣ 📜PlanDetail.module.css
+ ┃ ┣ 📜PopularPage.js
+ ┃ ┣ 📜PopularPage.module.css
+ ┃ ┣ 📜PortfolioDetail.js
+ ┃ ┣ 📜PortfolioDetail.module.css
+ ┃ ┣ 📜PortfolioPage.js
+ ┃ ┣ 📜PortfolioPage.module.css
+ ┃ ┣ 📜Transaction.css
+ ┃ ┣ 📜Transaction.js
+ ┃ ┣ 📜Transaction.module.css
+ ┃ ┣ 📜TransactionDetail.js
+ ┃ ┣ 📜TransactionDetail.module.css
+ ┃ ┗ 📜UpdateBudget.js
+ ┣ 📜App.css
+ ┣ 📜App.js
+ ┣ 📜App.test.js
+ ┣ 📜index.css
+ ┣ 📜index.js
+ ┣ 📜logo.svg
+ ┣ 📜reportWebVitals.js
+ ┣ 📜service-worker.js
+ ┣ 📜serviceWorkerRegistration.js
+ ┣ 📜setupProxy.js
+ ┗ 📜setupTests.js
+```
+  
+</details>
+
 <br/>
 
 ## 🖥️ 서비스 구현 화면
@@ -120,10 +246,17 @@
 ![image](https://github.com/SawSimE/SolTrip/assets/66519915/22e49162-41b7-4cb3-98b4-59b714f54257)
 
 - 본인 계좌에 1원 송금을 통해서 본인 인증을 진행
+  
+<br/>
 
 ### 2. 메인화면
 
 ![image](https://github.com/SawSimE/SolTrip/assets/66519915/c1f9bf71-ccb0-4bf5-b17d-eb6cf8580c0f)
+<img src="https://github.com/gayong/SolTrip/assets/122499571/ec96b4ad-da38-4ff0-a629-85150435bd14" width="325"/>
+
+(좌) 등록된 여행 일정이 없을 때 / (우) 등록된 여행 일정이 있을 때
+
+<br/>
 
 ### 3. 여행 일정 등록
 
@@ -141,44 +274,75 @@
 
 - 일자별로 카테고리와 예상 예산 금액을 입력하여 예산을 등록
 
+<br/>
+
 ### 4. 여행 예산 분석
 
 4.1 여행 예산 분석
 
 ![image](https://github.com/SawSimE/SolTrip/assets/66519915/8c10cee1-fa5d-4c27-a04d-ff497de04f2b)
 
-- 오늘 날짜의 여행 예산을 사용 금액과 퍼센트를 표시
+- 오늘 날짜의 여행 예산에서 사용 금액과 카테고리 별 퍼센트를 표시
+  
+<br/>
+
 
 ### 5. 인기 장소 추천
 
 5.1 인기 장소 추천
 
-![image](https://github.com/SawSimE/SolTrip/assets/66519915/e95bc924-49b4-47df-b9aa-95be21419411)
+<img src="https://github.com/gayong/SolTrip/assets/122499571/a3cd7135-ba9f-4154-99a8-133ec99973a7" width="325"/> 
+<img src="https://github.com/SawSimE/SolTrip/assets/66519915/e95bc924-49b4-47df-b9aa-95be21419411" width="325"/> 
 
-- 현제 내 위치 기준으로 사용자의 결제 내역중 가장 많은 결제가 있는 순으로 표시
 
-### 6. 정산
+- 현재 내 위치를 GPS로 파악해 인근 지역 내 다른 사용자들의 결제 내역이 가장 많은 순으로 표시 (카테고리별 분류)
+  
+<br/>
+
+### 6. 거래 내역 확인 및 정산
 
 6.1 거래 내역
 
 ![image](https://github.com/SawSimE/SolTrip/assets/66519915/5967b5dd-cacb-45f1-8dc5-2628e669ccef)
 
-- 내가 여행중 사용한 내역을 표시
+- 여행 중 사용한 카드/현금 거래 내역 표시
 
-6.2 정산
+6.2. 현금 기록하기
+
+<img src="https://github.com/gayong/SolTrip/assets/122499571/f6754b36-3dac-42e5-a197-4702c6223e77" width="325"/>
+
+- 현금의 경우 직접 기록하기 가능
+
+6.3. 거래 상세내역
+
+<img src="https://github.com/gayong/SolTrip/assets/122499571/42ddbeb3-626d-4d57-b813-0a7a13a0969a" width="325"/>
+
+- 거래 내역 선택 시 뜨는 상세 내역
+
+6.4 정산
 
 ![image](https://github.com/SawSimE/SolTrip/assets/66519915/4df85848-0952-4b07-b01b-b29a6ce23d7d)
 ![image](https://github.com/SawSimE/SolTrip/assets/66519915/f716b467-f74b-420c-9daf-d0e36f8bcd09)
+<img src="https://github.com/gayong/SolTrip/assets/122499571/aa901468-0487-4308-9152-082442203a3e" width="325"/>
 
-- 정산이 필요한 내역을 체크하여 다른 사람들과 공유
+- 정산이 필요한 내역을 체크하여 이미지 저장 형태로 다른 사람에게 공유
+
+<br/>
 
 ### 7. 포트폴리오
 
-7.1 포트폴리오
+7.1 포트폴리오 메인
 
-![image](https://github.com/SawSimE/SolTrip/assets/66519915/2af302a7-f397-4db9-9319-bb8cca0af3a8)
+<img src="https://github.com/gayong/SolTrip/assets/122499571/2a0b454a-4e11-4c28-946c-2a30056bbbc7" width="325"/>
+<img src="https://github.com/gayong/SolTrip/assets/122499571/21fbea31-2eee-4f4d-aef9-0d41767302dd" width="325"/>
 
-- 결제 내역과 그에 따른 이동 경로 순서대로 지도에 표시
+(좌) 끝마친 여행이 없을 때 / (우) 끝마친 여행이 있을 때
+
+7.2 포트폴리오
+
+<img src="https://github.com/gayong/SolTrip/assets/122499571/f2e451c2-5a5e-4bf6-99af-86edfeb4bbec" width="325"/>
+
+- 여행을 마친 후, 위치별 결제 내역과 그에 따른 이동 경로 순서대로 지도에 표시
 
 <br/>
 
